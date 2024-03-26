@@ -16,6 +16,9 @@ sudo apt-get install build-essential python-dev python-smbus python-pip python-i
 For Raspberry Pi, install the RPi.GPIO library:
 ```bash
 sudo pip install RPi.GPIO
-```bash
+```
 For BeagleBone Black, install the Adafruit_BBIO library:
+```bash
+sudo pip install Adafruit_BBIO
+```
 
