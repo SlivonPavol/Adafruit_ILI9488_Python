@@ -27,5 +27,5 @@ To use the library, download the repository, unzip it, navigate to the directory
 python3 shapes.py
 ```
 ### Credits
-This library is based on the original ILI9341 Python library by Tony DiCola for Adafruit Industries, available at: Adafruit_Python_ILI9341. It has been modified for ILI9488 displays.
+This library is based on the original ILI9341 Python library by Tony DiCola for Adafruit Industries, available at: [Adafruit_Python_ILI9341](https://github.com/adafruit/Adafruit_Python_ILI9341). It has been modified for ILI9488 displays.
 
