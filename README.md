@@ -7,3 +7,8 @@ This repository contains a modified version of the Python library to control an 
 The ILI9488 Python Library is a modified version of the original library designed to control ILI9341 TFT LCD displays. While the original library was tailored for Adafruit 2.8" LCDs, this modified version provides compatibility and optimizations for ILI9488 displays. It allows simple drawing on the display without the need to install a kernel module, making it suitable for various platforms including Raspberry Pi and BeagleBone Black.
 
 ## Dependencies
+For all platforms (Raspberry Pi and BeagleBone Black), ensure you have the following dependencies installed:
+
+```bash
+sudo apt-get update
+sudo apt-get install build-essential python-dev python-smbus python-pip python-imaging
