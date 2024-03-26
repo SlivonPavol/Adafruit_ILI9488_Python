@@ -21,4 +21,14 @@ For BeagleBone Black, install the Adafruit_BBIO library:
 ```bash
 sudo pip install Adafruit_BBIO
 ```
+### Usage
+To use the library, download the repository, unzip it, navigate to the directory containing the library, and execute the desired Python script:
+```bash
+python3 shapes.py
+```
+### Credits
+This library is based on the original ILI9341 Python library by Tony DiCola for Adafruit Industries, and it has been modified for ILI9488 displays.
+
+### License
+This library is released under the MIT License. Please see the LICENSE file for details.
 
