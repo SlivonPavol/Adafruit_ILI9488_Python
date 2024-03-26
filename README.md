@@ -12,3 +12,10 @@ For all platforms (Raspberry Pi and BeagleBone Black), ensure you have the follo
 ```bash
 sudo apt-get update
 sudo apt-get install build-essential python-dev python-smbus python-pip python-imaging
+```bash
+For Raspberry Pi, install the RPi.GPIO library:
+```bash
+sudo pip install RPi.GPIO
+```bash
+For BeagleBone Black, install the Adafruit_BBIO library:
+
