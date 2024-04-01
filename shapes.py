@@ -30,23 +30,28 @@ text_position = (50, 50)  # Position where you want to place the text
 text_color = (255, 255, 255)  # Color of the text (default is white)
 
 # Add text to the display
-disp.add_text("Beat_num", "100", ((320/2)-50, (160/2)-20), font=Beat_num_font, color=text_color)
+disp.add_text("Beat_num", "100", ((320/2)-50, 60), font=Beat_num_font, color=text_color)
 disp.add_text("Beat_text", "Bpm", (230, 110), font=Beat_text_font, color=text_color)
+disp.add_text("oxygen_num", "100", ((320/2)-50, 190), font=Beat_num_font, color=text_color)
+disp.add_text("oxygen_text", "%", (240, 240), font=Beat_text_font, color=text_color)
 disp.display()
 
 # Load sprite images
-sprite_image = disp.load_sprite_from_file("heart70.png")
-sprite_image1 = disp.load_sprite_from_file("heart76.png")
+heart_image = disp.load_sprite_from_file("heart1.png", size=(70,70))
+heart_image1 = disp.load_sprite_from_file("heart1.png", size=(76,76))
+oxygen_image = disp.load_sprite_from_file("oxygen1.png", size=(70,70))
+oxygen_image1 = disp.load_sprite_from_file("oxygen1.png", size=(76,76))
 
 # Animation loop
 while True:
     # Display first sprite image
-    disp.add_sprite("biele", sprite_image, (230, 50), transparent=True)
-    disp.remove_sprite("idk")
+    disp.add_sprite("male_srdco", heart_image, (230, 50), transparent=True)
+    disp.remove_sprite("velke_srdco")
+    disp.add_sprite("male_oxygen", oxygen_image, (230, 175), transparent=True)
     disp.display()
     sleep(0.1)
 
     # Display second sprite image
-    disp.remove_sprite("biele")
-    disp.add_sprite("idk", sprite_image1, (230, 50), transparent=True)
+    disp.remove_sprite("male_srdco")
+    disp.add_sprite("velke_srdco", heart_image1, (230, 50), transparent=True)
     disp.display()
